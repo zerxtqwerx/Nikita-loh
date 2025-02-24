@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header {
+    background: url('E:/Nikita loh/title1.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    padding-top: 15%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+
+}
+.title{
+    padding-top: 0px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.subtitle{
+    padding-top: 0px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.title2{
+    padding-top: 5%;
+    font-size: 60px;
+    font-weight: bold;
+}
+.subtitle2{
+    font-size:20px;
+    padding: 10%;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right:15%;
+    text-align: justify;
+    font-size: medium;
+    color: white;
+  }
+  .flex-container img {
+    max-width: 100%;
+    height: auto;
+    margin-left:5%;
+    margin-right: 5%;
+  }
+section {
+    padding: 40px;
+    text-align: center;
+}
+.white-background {
+    background-color: white;
+    color: #333;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.collage {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    justify-items: center; 
+}
+.collage img {
+    width: 100%; 
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto; 
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+@media (max-width: 600px) {
+    .collage img {
+        width: 100%;
+    }
+}
