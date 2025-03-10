@@ -36,23 +36,60 @@ header {
     padding: 10%;
 }
 
+.button {
+    background-color: rgb(220, 251, 255);
+    font-family: "Myriad Pro", sans-serif;
+    font-size: medium;
+    color:rgb(45, 99, 180);
+    text-decoration: none;
+    margin-right: 3%;
+    padding: 2%;
+    border-radius: 50%;
+  }
+
 .flex-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     margin-left: 15%;
     margin-right:15%;
+    padding-left: 5%;
+    padding-right:5%;
     text-align: justify;
     font-size: medium;
     color: white;
   }
-  .flex-container img {
-    max-width: 100%;
-    height: auto;
-    margin-left:5%;
-    margin-right: 5%;
+
+  .flex-container text{
+    flex: 1;
+    max-width: 500px; 
+    margin-right: 20px;
   }
+  .flex-container img{
+    position: relative;
+    align-items: center;
+    flex: 1;
+    max-width: 100%; 
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.image1 {
+    position: relative;
+    z-index: 1; 
+}
+
+.image2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 0; 
+}
 section {
     padding: 40px;
     text-align: center;
@@ -62,6 +99,7 @@ section {
     color: #333;
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 5%;
 }
 .collage {
     display: grid; 
@@ -82,7 +120,7 @@ footer {
     color: white;
 }
 @media (max-width: 600px) {
-    .collage img {
-        width: 100%;
-    }
+    .flex-container {
+        flex-direction: column;
+        text-align: center;}
 }
